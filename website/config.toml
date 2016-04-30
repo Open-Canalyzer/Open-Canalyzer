@@ -1,6 +1,6 @@
-baseurl = "http://maartentamboer.github.io/docs/"
+baseurl = "http://open-canalyzer.github.io/docs"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Open-Canalyzer Docs"
 theme = "hugo-theme-learn"
 canonifyurls = true
 
