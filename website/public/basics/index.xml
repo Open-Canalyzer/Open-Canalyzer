@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basics on My New Hugo Site</title>
+    <link>http://maartentamboer.github.io/docs/basics/</link>
+    <description>Recent content in Basics on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://maartentamboer.github.io/docs/basics/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Basics</title>
+      <link>http://maartentamboer.github.io/docs/basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://maartentamboer.github.io/docs/basics/</guid>
+      <description>
+
+&lt;h3 id=&#34;chapter-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Chapter 1&lt;/h3&gt;
+
+&lt;h1 id=&#34;basics:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Basics&lt;/h1&gt;
+
+&lt;p&gt;Discover what this Hugo theme is all about and the core-concepts behind it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>http://maartentamboer.github.io/docs/basics/second-content/</link>
+      <pubDate>Wed, 27 Apr 2016 13:48:01 +0200</pubDate>
+      
+      <guid>http://maartentamboer.github.io/docs/basics/second-content/</guid>
+      <description>&lt;p&gt;Lorem Ipsum&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>first content</title>
+      <link>http://maartentamboer.github.io/docs/basics/first-content/</link>
+      <pubDate>Wed, 27 Apr 2016 13:47:55 +0200</pubDate>
+      
+      <guid>http://maartentamboer.github.io/docs/basics/first-content/</guid>
+      <description>&lt;p&gt;Lorem Ipsum&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
