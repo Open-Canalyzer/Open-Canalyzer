@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1_overviews on My New Hugo Site</title>
-    <link>http://maartentamboer.github.io/docs/1_overview/</link>
-    <description>Recent content in 1_overviews on My New Hugo Site</description>
+    <title>1_overviews on Open-Canalyzer Docs</title>
+    <link>http://open-canalyzer.github.io/docs/1_overview/</link>
+    <description>Recent content in 1_overviews on Open-Canalyzer Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://maartentamboer.github.io/docs/1_overview/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://open-canalyzer.github.io/docs/1_overview/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Overview</title>
-      <link>http://maartentamboer.github.io/docs/1_overview/</link>
+      <link>http://open-canalyzer.github.io/docs/1_overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://maartentamboer.github.io/docs/1_overview/</guid>
+      <guid>http://open-canalyzer.github.io/docs/1_overview/</guid>
       <description>
 
 &lt;h3 id=&#34;chapter-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Chapter 1&lt;/h3&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>Architecture</title>
-      <link>http://maartentamboer.github.io/docs/1_overview/architecture/</link>
+      <link>http://open-canalyzer.github.io/docs/1_overview/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://maartentamboer.github.io/docs/1_overview/architecture/</guid>
+      <guid>http://open-canalyzer.github.io/docs/1_overview/architecture/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;images/oca-overview.png&#34; alt=&#34;oca Overview&#34; /&gt;&lt;/p&gt;
@@ -61,10 +61,10 @@
     
     <item>
       <title>second content</title>
-      <link>http://maartentamboer.github.io/docs/1_overview/second-content/</link>
+      <link>http://open-canalyzer.github.io/docs/1_overview/second-content/</link>
       <pubDate>Wed, 27 Apr 2016 13:48:01 +0200</pubDate>
       
-      <guid>http://maartentamboer.github.io/docs/1_overview/second-content/</guid>
+      <guid>http://open-canalyzer.github.io/docs/1_overview/second-content/</guid>
       <description>&lt;p&gt;Lorem Ipsum&lt;/p&gt;
 </description>
     </item>
