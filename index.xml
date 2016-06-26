@@ -71,7 +71,7 @@
 
 &lt;h1 id=&#34;oca-hw:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;oca-hw&lt;/h1&gt;
 
-&lt;p&gt;Well, this is the C library for liboca. Some magical stuff happens in here.&lt;/p&gt;
+&lt;p&gt;This contains the hardware for Open-Canalyzer&lt;/p&gt;
 </description>
     </item>
     
@@ -82,6 +82,324 @@
       
       <guid>http://open-canalyzer.github.io/docs/1_overview/second-content/</guid>
       <description>&lt;p&gt;Lorem Ipsum&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Qualification</title>
+      <link>http://open-canalyzer.github.io/docs/2_oca-hw/qualification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://open-canalyzer.github.io/docs/2_oca-hw/qualification/</guid>
+      <description>
+
+&lt;h2 id=&#34;hardware-tools:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Hardware tools&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Abbreviation&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;oca1&lt;/td&gt;
+&lt;td&gt;Open-Canalyzer&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;oca2&lt;/td&gt;
+&lt;td&gt;Open-Canalyzer&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;DMM&lt;/td&gt;
+&lt;td&gt;Voltcraft VC-60&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Scope&lt;/td&gt;
+&lt;td&gt;Rigol DS1054Z&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;software-tools:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Software tools&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Abbreviation&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;liboca&lt;/td&gt;
+&lt;td&gt;oca library&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;oca-qualification&lt;/td&gt;
+&lt;td&gt;oca qualification executable&lt;/td&gt;
+&lt;td&gt;Tool that generates USB and CAN traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;qualification-setup-environment:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Qualification setup / environment&lt;/h2&gt;
+
+&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Insert diagram of connection setup. &lt;br/&gt;Add table with variables like temperature&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;power-supplies:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Power supplies&lt;/h2&gt;
+
+&lt;p&gt;First check for shorts on each power supply net using the DMM.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Min&lt;/th&gt;
+&lt;th&gt;Max&lt;/th&gt;
+&lt;th&gt;Measured&lt;/th&gt;
+&lt;th&gt;Pass/Fail&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;VUSB -&amp;gt; GND&lt;/td&gt;
+&lt;td&gt;10k Ohm&lt;/td&gt;
+&lt;td&gt;INF&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5V_ISO -&amp;gt; GND_ISO&lt;/td&gt;
+&lt;td&gt;10k Ohm&lt;/td&gt;
+&lt;td&gt;INF&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3V3(VCC) -&amp;gt; GND&lt;/td&gt;
+&lt;td&gt;10k Ohm&lt;/td&gt;
+&lt;td&gt;INF&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;5v-usb-input:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;5V USB input&lt;/h3&gt;
+
+&lt;h4 id=&#34;output-voltage:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Output voltage&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Min&lt;/th&gt;
+&lt;th&gt;Max&lt;/th&gt;
+&lt;th&gt;Measured&lt;/th&gt;
+&lt;th&gt;Pass/Fail&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;VUSB -&amp;gt; GND&lt;/td&gt;
+&lt;td&gt;4.40V&lt;/td&gt;
+&lt;td&gt;5.25V&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;noise:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Noise&lt;/h4&gt;
+
+&lt;h4 id=&#34;startup-and-shutdown:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Startup and shutdown&lt;/h4&gt;
+
+&lt;h3 id=&#34;5v-isolated:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;5V Isolated&lt;/h3&gt;
+
+&lt;h4 id=&#34;output-voltage-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Output voltage&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Min&lt;/th&gt;
+&lt;th&gt;Max&lt;/th&gt;
+&lt;th&gt;Measured&lt;/th&gt;
+&lt;th&gt;Pass/Fail&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;5V_ISO -&amp;gt; GND_ISO&lt;/td&gt;
+&lt;td&gt;4.85V&lt;/td&gt;
+&lt;td&gt;5.15V&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;isolation-resistance:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Isolation resistance&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Min&lt;/th&gt;
+&lt;th&gt;Max&lt;/th&gt;
+&lt;th&gt;Measured&lt;/th&gt;
+&lt;th&gt;Pass/Fail&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;VUSB -&amp;gt; 5V_ISO&lt;/td&gt;
+&lt;td&gt;1000 Mohm&lt;/td&gt;
+&lt;td&gt;INF&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;GND  -&amp;gt; GND_ISO&lt;/td&gt;
+&lt;td&gt;1000 Mohm&lt;/td&gt;
+&lt;td&gt;INF&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;noise-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Noise&lt;/h4&gt;
+
+&lt;h4 id=&#34;ripple:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Ripple&lt;/h4&gt;
+
+&lt;h4 id=&#34;startup-and-shutdown-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Startup and shutdown&lt;/h4&gt;
+
+&lt;h4 id=&#34;thermal-image:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Thermal image&lt;/h4&gt;
+
+&lt;h3 id=&#34;3v3:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;3V3&lt;/h3&gt;
+
+&lt;h4 id=&#34;output-voltage-2:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Output voltage&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Min&lt;/th&gt;
+&lt;th&gt;Max&lt;/th&gt;
+&lt;th&gt;Measured&lt;/th&gt;
+&lt;th&gt;Pass/Fail&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;3V3(VCC) -&amp;gt; GND&lt;/td&gt;
+&lt;td&gt;3.235V&lt;/td&gt;
+&lt;td&gt;3.365V&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;noise-2:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Noise&lt;/h4&gt;
+
+&lt;h4 id=&#34;ripple-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Ripple&lt;/h4&gt;
+
+&lt;h4 id=&#34;startup-and-shutdown-2:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Startup and shutdown&lt;/h4&gt;
+
+&lt;h4 id=&#34;thermal-image-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Thermal image&lt;/h4&gt;
+
+&lt;h2 id=&#34;clocks:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Clocks&lt;/h2&gt;
+
+&lt;h3 id=&#34;8mhz-oscillator:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;8MHz oscillator&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Min&lt;/th&gt;
+&lt;th&gt;Max&lt;/th&gt;
+&lt;th&gt;Measured&lt;/th&gt;
+&lt;th&gt;Pass/Fail&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Frequency&lt;/td&gt;
+&lt;td&gt;7.992 MHz&lt;/td&gt;
+&lt;td&gt;8.008 MHz&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Jitter&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Rise time&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Fall time&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;can:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;CAN&lt;/h2&gt;
+
+&lt;h3 id=&#34;termination:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Termination&lt;/h3&gt;
+
+&lt;h3 id=&#34;signal-integrity:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Signal integrity&lt;/h3&gt;
+
+&lt;h4 id=&#34;can-tx-can-rx:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;CAN_TX / CAN_RX&lt;/h4&gt;
+
+&lt;h4 id=&#34;can-h-can-l:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;CAN_H / CAN_L&lt;/h4&gt;
+
+&lt;h2 id=&#34;usb:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;USB&lt;/h2&gt;
+
+&lt;h3 id=&#34;signal-integrity-1:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Signal integrity&lt;/h3&gt;
+
+&lt;h4 id=&#34;usb-dp-usb-dn:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;USB_DP / USB_DN&lt;/h4&gt;
 </description>
     </item>
     
