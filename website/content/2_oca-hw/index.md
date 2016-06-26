@@ -1,6 +1,6 @@
 ---
 title: oca-hw
-next: /basics/what-is-this-hugo-theme
+next: /2_oca-hw/qualification/
 chapter: true
 weight: 5
 icon: "<b>2. </b>"
@@ -10,4 +10,4 @@ icon: "<b>2. </b>"
 
 # oca-hw
 
-Well, this is the C library for liboca. Some magical stuff happens in here.
+This contains the hardware for Open-Canalyzer

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.15" />
+    <meta name="description" content="Documentation for the Open-Canalyzer">
+<meta name="author" content="Maarten Tamboer and Jerry Jacobs">
+
+    <link rel="shortcut icon" href="http://open-canalyzer.github.io/docs/images/favicon.png" type="image/x-icon" />
+
+    
+    <title>Qualification</title>
+    <link href="http://open-canalyzer.github.io/docs/css/nucleus.css" rel="stylesheet">
+    <link href="http://open-canalyzer.github.io/docs/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://open-canalyzer.github.io/docs/css/hybrid.css" rel="stylesheet">
+    <link href="http://open-canalyzer.github.io/docs/css/featherlight.min.css" rel="stylesheet">
+    <link href="http://open-canalyzer.github.io/docs/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="http://open-canalyzer.github.io/docs/css/theme.css" rel="stylesheet">
+    <link href="http://open-canalyzer.github.io/docs/css/hugo-theme.css" rel="stylesheet">
+    <style type="text/css">:root #header + #content > #left > #rlblock_left
+    {display:none !important;}</style>
+    
+
+  </head>
+  <body class="" data-url="/">
+    <nav id="sidebar">
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://open-canalyzer.github.io/docs/">
+ Open-Canalyzer Docs
+</a>
+
+      
+    </div>
+</div>
+
+
+  <div class="highlightable">
+    <ul class="topics">
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/1_overview/">
+        <a href="http://open-canalyzer.github.io/docs/1_overview/">
+          <span>
+            
+              <b>1. </b>
+            
+             Overview
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item " data-nav-id="/1_overview/architecture/">
+              <a href="http://open-canalyzer.github.io/docs/1_overview/architecture/">
+                <span>Architecture</span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/1_overview/second-content/">
+              <a href="http://open-canalyzer.github.io/docs/1_overview/second-content/">
+                <span>second content</span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  parent" data-nav-id="/2_oca-hw/">
+        <a href="http://open-canalyzer.github.io/docs/2_oca-hw/">
+          <span>
+            
+              <b>2. </b>
+            
+             oca-hw
+           </span>
+        </a>
+        
+        <ul>
+          
+          
+          
+          
+            <li class="dd-item active" data-nav-id="/2_oca-hw/qualification/">
+              <a href="http://open-canalyzer.github.io/docs/2_oca-hw/qualification/">
+                <span>Qualification</span>
+              </a>
+            </li>
+          
+          
+        </ul>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/3_liboca/">
+        <a href="http://open-canalyzer.github.io/docs/3_liboca/">
+          <span>
+            
+              <b>3. </b>
+            
+             liboca
+           </span>
+        </a>
+        
+      </li>
+      
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/4_oca-gui/">
+        <a href="http://open-canalyzer.github.io/docs/4_oca-gui/">
+          <span>
+            
+              <b>4. </b>
+            
+             oca-gui
+           </span>
+        </a>
+        
+      </li>
+      
+      
+    </ul>
+    <hr>
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+    </section>
+  </div>
+</nav>
+
+        <section id="body">
+        <div id="overlay"></div>
+
+        <div class="padding highlightable">
+
+            <div id="top-bar">
+              
+                
+                
+                
+              <div id="top-github-link">
+                  <a class="github-link" href="https://github.com/Open-Canalyzer/docs2_oca-hw/Qualification/index.md" target="blank">
+                    <i class="fa fa-code-fork"></i>
+                    Edit this page
+                  </a>
+              </div>
+                
+              
+              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span id="sidebar-toggle-span">
+                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                  </span>
+                
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
+                
+                
+                
+                  
+                
+                  
+                    
+                    
+                <a href="http://open-canalyzer.github.io/docs/2_oca-hw/" itemprop="url"><span itemprop="title">oca-hw</span></a> <i class="fa fa-angle-right"></i>
+                    
+                  
+                
+                  
+                
+                  
+                
+                <span itemprop="title"> Qualification</span>
+              </div>
+              
+                  <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#hardware-tools:d680e8a854a7cbad6d490c445cba2eba">Hardware tools</a></li>
+<li><a href="#software-tools:d680e8a854a7cbad6d490c445cba2eba">Software tools</a></li>
+<li><a href="#qualification-setup-environment:d680e8a854a7cbad6d490c445cba2eba">Qualification setup / environment</a></li>
+<li><a href="#power-supplies:d680e8a854a7cbad6d490c445cba2eba">Power supplies</a>
+<ul>
+<li><a href="#5v-usb-input:d680e8a854a7cbad6d490c445cba2eba">5V USB input</a>
+<ul>
+<li><a href="#output-voltage:d680e8a854a7cbad6d490c445cba2eba">Output voltage</a></li>
+<li><a href="#noise:d680e8a854a7cbad6d490c445cba2eba">Noise</a></li>
+<li><a href="#startup-and-shutdown:d680e8a854a7cbad6d490c445cba2eba">Startup and shutdown</a></li>
+</ul></li>
+<li><a href="#5v-isolated:d680e8a854a7cbad6d490c445cba2eba">5V Isolated</a>
+<ul>
+<li><a href="#output-voltage-1:d680e8a854a7cbad6d490c445cba2eba">Output voltage</a></li>
+<li><a href="#isolation-resistance:d680e8a854a7cbad6d490c445cba2eba">Isolation resistance</a></li>
+<li><a href="#noise-1:d680e8a854a7cbad6d490c445cba2eba">Noise</a></li>
+<li><a href="#ripple:d680e8a854a7cbad6d490c445cba2eba">Ripple</a></li>
+<li><a href="#startup-and-shutdown-1:d680e8a854a7cbad6d490c445cba2eba">Startup and shutdown</a></li>
+<li><a href="#thermal-image:d680e8a854a7cbad6d490c445cba2eba">Thermal image</a></li>
+</ul></li>
+<li><a href="#3v3:d680e8a854a7cbad6d490c445cba2eba">3V3</a>
+<ul>
+<li><a href="#output-voltage-2:d680e8a854a7cbad6d490c445cba2eba">Output voltage</a></li>
+<li><a href="#noise-2:d680e8a854a7cbad6d490c445cba2eba">Noise</a></li>
+<li><a href="#ripple-1:d680e8a854a7cbad6d490c445cba2eba">Ripple</a></li>
+<li><a href="#startup-and-shutdown-2:d680e8a854a7cbad6d490c445cba2eba">Startup and shutdown</a></li>
+<li><a href="#thermal-image-1:d680e8a854a7cbad6d490c445cba2eba">Thermal image</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#clocks:d680e8a854a7cbad6d490c445cba2eba">Clocks</a>
+<ul>
+<li><a href="#8mhz-oscillator:d680e8a854a7cbad6d490c445cba2eba">8MHz oscillator</a></li>
+</ul></li>
+<li><a href="#can:d680e8a854a7cbad6d490c445cba2eba">CAN</a>
+<ul>
+<li><a href="#termination:d680e8a854a7cbad6d490c445cba2eba">Termination</a></li>
+<li><a href="#signal-integrity:d680e8a854a7cbad6d490c445cba2eba">Signal integrity</a>
+<ul>
+<li><a href="#can-tx-can-rx:d680e8a854a7cbad6d490c445cba2eba">CAN_TX / CAN_RX</a></li>
+<li><a href="#can-h-can-l:d680e8a854a7cbad6d490c445cba2eba">CAN_H / CAN_L</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#usb:d680e8a854a7cbad6d490c445cba2eba">USB</a>
+<ul>
+<li><a href="#signal-integrity-1:d680e8a854a7cbad6d490c445cba2eba">Signal integrity</a>
+<ul>
+<li><a href="#usb-dp-usb-dn:d680e8a854a7cbad6d490c445cba2eba">USB_DP / USB_DN</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+              
+
+            </div>
+            
+    	        <div id="body-inner">
+                
+                <h1>Qualification</h1>
+                
+
+
+
+<h2 id="hardware-tools:d680e8a854a7cbad6d490c445cba2eba">Hardware tools</h2>
+
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Name</th>
+<th>Comment</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>oca1</td>
+<td>Open-Canalyzer</td>
+<td></td>
+</tr>
+
+<tr>
+<td>oca2</td>
+<td>Open-Canalyzer</td>
+<td></td>
+</tr>
+
+<tr>
+<td>DMM</td>
+<td>Voltcraft VC-60</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Scope</td>
+<td>Rigol DS1054Z</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="software-tools:d680e8a854a7cbad6d490c445cba2eba">Software tools</h2>
+
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Name</th>
+<th>Comment</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>liboca</td>
+<td>oca library</td>
+<td></td>
+</tr>
+
+<tr>
+<td>oca-qualification</td>
+<td>oca qualification executable</td>
+<td>Tool that generates USB and CAN traffic</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="qualification-setup-environment:d680e8a854a7cbad6d490c445cba2eba">Qualification setup / environment</h2>
+
+<div class="notices note" ><p>Insert diagram of connection setup. <br/>Add table with variables like temperature</p>
+</div>
+
+
+<h2 id="power-supplies:d680e8a854a7cbad6d490c445cba2eba">Power supplies</h2>
+
+<p>First check for shorts on each power supply net using the DMM.</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Min</th>
+<th>Max</th>
+<th>Measured</th>
+<th>Pass/Fail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>VUSB -&gt; GND</td>
+<td>10k Ohm</td>
+<td>INF</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>5V_ISO -&gt; GND_ISO</td>
+<td>10k Ohm</td>
+<td>INF</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>3V3(VCC) -&gt; GND</td>
+<td>10k Ohm</td>
+<td>INF</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="5v-usb-input:d680e8a854a7cbad6d490c445cba2eba">5V USB input</h3>
+
+<h4 id="output-voltage:d680e8a854a7cbad6d490c445cba2eba">Output voltage</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Min</th>
+<th>Max</th>
+<th>Measured</th>
+<th>Pass/Fail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>VUSB -&gt; GND</td>
+<td>4.40V</td>
+<td>5.25V</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="noise:d680e8a854a7cbad6d490c445cba2eba">Noise</h4>
+
+<h4 id="startup-and-shutdown:d680e8a854a7cbad6d490c445cba2eba">Startup and shutdown</h4>
+
+<h3 id="5v-isolated:d680e8a854a7cbad6d490c445cba2eba">5V Isolated</h3>
+
+<h4 id="output-voltage-1:d680e8a854a7cbad6d490c445cba2eba">Output voltage</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Min</th>
+<th>Max</th>
+<th>Measured</th>
+<th>Pass/Fail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>5V_ISO -&gt; GND_ISO</td>
+<td>4.85V</td>
+<td>5.15V</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="isolation-resistance:d680e8a854a7cbad6d490c445cba2eba">Isolation resistance</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Min</th>
+<th>Max</th>
+<th>Measured</th>
+<th>Pass/Fail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>VUSB -&gt; 5V_ISO</td>
+<td>1000 Mohm</td>
+<td>INF</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>GND  -&gt; GND_ISO</td>
+<td>1000 Mohm</td>
+<td>INF</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="noise-1:d680e8a854a7cbad6d490c445cba2eba">Noise</h4>
+
+<h4 id="ripple:d680e8a854a7cbad6d490c445cba2eba">Ripple</h4>
+
+<h4 id="startup-and-shutdown-1:d680e8a854a7cbad6d490c445cba2eba">Startup and shutdown</h4>
+
+<h4 id="thermal-image:d680e8a854a7cbad6d490c445cba2eba">Thermal image</h4>
+
+<h3 id="3v3:d680e8a854a7cbad6d490c445cba2eba">3V3</h3>
+
+<h4 id="output-voltage-2:d680e8a854a7cbad6d490c445cba2eba">Output voltage</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Min</th>
+<th>Max</th>
+<th>Measured</th>
+<th>Pass/Fail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>3V3(VCC) -&gt; GND</td>
+<td>3.235V</td>
+<td>3.365V</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="noise-2:d680e8a854a7cbad6d490c445cba2eba">Noise</h4>
+
+<h4 id="ripple-1:d680e8a854a7cbad6d490c445cba2eba">Ripple</h4>
+
+<h4 id="startup-and-shutdown-2:d680e8a854a7cbad6d490c445cba2eba">Startup and shutdown</h4>
+
+<h4 id="thermal-image-1:d680e8a854a7cbad6d490c445cba2eba">Thermal image</h4>
+
+<h2 id="clocks:d680e8a854a7cbad6d490c445cba2eba">Clocks</h2>
+
+<h3 id="8mhz-oscillator:d680e8a854a7cbad6d490c445cba2eba">8MHz oscillator</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Min</th>
+<th>Max</th>
+<th>Measured</th>
+<th>Pass/Fail</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Frequency</td>
+<td>7.992 MHz</td>
+<td>8.008 MHz</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Jitter</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Rise time</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Fall time</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="can:d680e8a854a7cbad6d490c445cba2eba">CAN</h2>
+
+<h3 id="termination:d680e8a854a7cbad6d490c445cba2eba">Termination</h3>
+
+<h3 id="signal-integrity:d680e8a854a7cbad6d490c445cba2eba">Signal integrity</h3>
+
+<h4 id="can-tx-can-rx:d680e8a854a7cbad6d490c445cba2eba">CAN_TX / CAN_RX</h4>
+
+<h4 id="can-h-can-l:d680e8a854a7cbad6d490c445cba2eba">CAN_H / CAN_L</h4>
+
+<h2 id="usb:d680e8a854a7cbad6d490c445cba2eba">USB</h2>
+
+<h3 id="signal-integrity-1:d680e8a854a7cbad6d490c445cba2eba">Signal integrity</h3>
+
+<h4 id="usb-dp-usb-dn:d680e8a854a7cbad6d490c445cba2eba">USB_DP / USB_DN</h4>
+
+
+      
+      </div>
+    </div>
+
+    <div id="navigation">
+        <a class="nav nav-prev" href="http://open-canalyzer.github.io/docs/2_oca-hw"> <i class="fa fa-chevron-left"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="http://open-canalyzer.github.io/docs/js/jquery-2.x.min.js"></script>
+    <script src="http://open-canalyzer.github.io/docs/js/clipboard.min.js"></script>
+    <script src="http://open-canalyzer.github.io/docs/js/perfect-scrollbar.min.js"></script>
+    <script src="http://open-canalyzer.github.io/docs/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="http://open-canalyzer.github.io/docs/js/jquery.sticky-kit.min.js"></script>
+    <script src="http://open-canalyzer.github.io/docs/js/featherlight.min.js"></script>
+    <script src="http://open-canalyzer.github.io/docs/js/html5shiv-printshiv.min.js"></script>
+    <script src="http://open-canalyzer.github.io/docs/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="http://open-canalyzer.github.io/docs/js/modernizr.custom.71422.js"></script>
+    <script src="http://open-canalyzer.github.io/docs/js/learn.js"></script>
+    <script src="http://open-canalyzer.github.io/docs/js/hugo-learn.js"></script>
+    
+
+  </body>
+</html>
+
